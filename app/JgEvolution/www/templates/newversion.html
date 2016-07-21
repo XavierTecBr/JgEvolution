@@ -1,0 +1,10 @@
+<ion-view view-title="New Versions">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="version in versions" ng-style="version.already && {'background-color':'#ccc'} || {'background-color': 'white'}">
+        <h2>Version : {{version.version}}</h2>
+        <p>prerequisite : {{version.prerequisite}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
