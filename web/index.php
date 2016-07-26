@@ -7,7 +7,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 session_start();
 
 
-require __DIR__.'/control/controle.php';
+//require __DIR__.'/control/controle.php';
 
 
 require 'Slim/Slim.php';

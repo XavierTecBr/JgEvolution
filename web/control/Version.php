@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__.'/Control.php';
+include_once __DIR__.'/../dao/DaoVersion.php';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -31,5 +32,12 @@ class Version extends Control{
         
         return array_reverse($list);
     }
+    
+     function get_atualVersion(){
+        $this->daoVersion = new DaoVersion();
+        return $this->daoVersion->listAtualVersion();
+        //return 'oi';
+    }
+    
     
 }
